@@ -1,2 +1,1 @@
-# IntercessorNewsWebsite
-connect with data base
+# news_today

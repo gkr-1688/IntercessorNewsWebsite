@@ -1,0 +1,366 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+				<style>
+.dropbtn {
+background-color: black;
+color: white;
+padding: 6px;
+font-size: 14px;
+border: none;
+cursor: pointer;
+width: 60px;
+line-height: 5px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+background-color: black;
+}
+.dropbtn2 {
+background-color:white ;
+color: black;
+padding: 6px;
+font-size: 14px;
+border: none;
+cursor: pointer;
+width: 150px;
+line-height: 5px;
+}
+
+.dropbtn2:hover, .dropbtn2:focus {
+background-color: black;
+color: white;
+}
+#myInput {
+box-sizing: border-box;
+background-image: url('searchicon.png');
+background-position: 14px 12px;
+background-repeat: no-repeat;
+font-size: 16px;
+padding: 14px 20px 12px 45px;
+border: none;
+border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: black;
+min-width: 230px;
+overflow: auto;
+border: 1px solid #ddd;
+z-index: 1;
+}
+
+.dropdown-content a {
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {background-color: brown;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.show {display: block;}
+</style>
+
+</head>
+<body>
+<header>
+<div class="website-header">
+<img src="logo.png">
+<h1>इंटरसेसर समाचार</h1>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+var input, filter, ul, li, a, i;
+input = document.getElementById("myInput");
+filter = input.value.toUpperCase();
+div = document.getElementById("myDropdown");
+a = div.getElementsByTagName("a");
+for (i = 0; i < a.length; i++) {
+txtValue = a[i].textContent || a[i].innerText;
+if (txtValue.toUpperCase().indexOf(filter) > -1) {
+a[i].style.display = "";
+} else {
+a[i].style.display = "none";
+}
+}
+}
+</script>
+
+<div class="social-icons">
+<i> <div class="dropdown">
+<button onclick="" class="dropbtn2" ><i>select Language</i></button>
+<div id="myDropdown" class="dropdown-content">
+<input type="text" placeholder="Select Language" id="myInput" onkeyup="filterFunction()"></i>
+<a href="Hindi.html">Hindi</a>
+<a href="index.html">English</a>
+<a href="telugu.html">Telugu</a>
+</div>
+</div>
+<i> <div class="dropdown">
+<button onclick="" class="dropbtn" ><i class="fa fa-search"></i></button>
+<div id="myDropdown" class="dropdown-content">
+<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"></i>
+<a href="Aboutus.html">About</a>
+<a href="contactUs.html">Contact</a>
+<a href="#custom">Sources</a>
+<a href="pay.html">Support Us</a>
+</div>
+</div>
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-google-plus-g"></i>
+<i class="fab fa-instagram"></i>
+<i class="fas fa-rss"></i>
+</div>
+
+</div>
+			<nav class="navbar navbar-expand-md ">
+  <!-- Brand -->
+
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">होम</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="types/Politics.html">राजनीति</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="types/World.html">दुनिया</a>
+      </li>
+		<li class="nav-item">
+        <a class="nav-link" href="types/Business.html">व्यापार</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="types/Travel.html">यात्रा</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="types/Technology.html">प्रौद्योगिकी</a>
+      </li>
+		<li class="nav-item">
+        <a class="nav-link" href="types/Sports.html">खेल</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">लेख</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="types/Livenews.html">लाइव न्यूज चैनल</a>
+      </li>
+    </ul>
+  </div>
+			</nav>
+			<div class="breaking-news-section">
+				<span id="btext">Breaking News</span>
+				<marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+					<a href="https://hindi.news18.com/news/nation/2-south-african-nationals-test-covid-positive-in-bengaluru-3870852.html" class="breaking-news">
+						<p class="bntime">27 Nov 2021</p>
+						दक्षिण अफ्रीका से भारत आए 2 लोग कोरोना पॉजिटिव, नए वेरिएंट से मचा हड़कंप</a>
+					<a href="https://hindi.news18.com/news/nation/kulgam-congress-leader-ghulam-nabi-azad-lashed-out-at-the-center-for-making-kashmir-a-union-territory-3870683.html" class="breaking-news"><p class="bntime">27 Nov 2021</p>कश्मीर को UT बनाने पर बोले गुलाम नबी आजाद- ये तो ऐसा DGP को थानेदार, सीएम को MLA बनाने जैसा</a>
+					<a href="https://hindi.news18.com/news/world/international-studies-israeli-researchers-develop-most-accurate-lie-detector-in-their-study-uses-facial-muscles-3870728.html" class="breaking-news"><p class="bntime">27 Nov 2021</p>अब गलती से भी झूठ नहीं बोल पाएंगे, इजरायली वैज्ञानिकों ने बनाई ऐसी मशीन, जिससे कुछ नहीं छिपेगा, ऐसे करेगी काम</a>
+				</marquee>
+			</div>
+		</header>
+		<main>
+			<article id="popular-news">
+				<div id="featured">
+					<h2>FEATURED</h2>
+					<section class="popular-news-carousel">
+						<div id="carousel" class="carousel slide" data-ride="carousel">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img style="height:340" class="d-block w-100" src="https://resize.indiatv.in/resize/newbucket/905_-/2021/11/new-project-5-1638026127.jpg" alt="First slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h5><a style="color:white" href="https://www.indiatv.in/world/europe-british-scientists-statement-on-new-corona-variant-is-not-disaster-824903">कोरोना के नए वेरिएंट से पूरी दुनिया घबराई</a></h5>
+									<p>29th Nov 2021</p>
+								 </div>
+							</div>
+							<div class="carousel-item">
+							  <img style="height:340" class="d-block w-100" src="https://resize.indiatv.in/resize/newbucket/905_-/2021/11/narendra-singh-tomar-1638015608.jpg" alt="Second slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h5><a style="color:white" href="https://www.indiatv.in/india/national-stubble-burning-decriminalized-government-has-accepted-farmers-demand-narendra-singh-tomar-824878">पराली जलाना अब अपराध नहीं होगा, सरकार ने मानी किसानों की मांग</a></h5>
+									<p>29th Nov 2021</p>
+								 </div>
+							</div>
+							<div class="carousel-item">
+							  <img class="d-block w-100" src="https://images.hindustantimes.com/img/2021/08/17/1600x900/8adcdc2e-ff91-11eb-bd30-5909c9bc6f98_1629229479907.jpg" alt="Third slide">
+								<div class="carousel-caption d-none d-md-block">
+
+									<h5><a style="color:white" href="https://www.moneycontrol.com/news/politics/fertiliser-shortage-issue-priyanka-gandhi-meets-families-of-farmers-in-lalitpur-7649081.html">सुखबीर बादल बोले, सिद्धू कांग्रेस के लिए चुनौती हैं हमारे लिए नहीं</a></h5>
+									<p>29th Nov 2021</p>
+								 </div>
+							</div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</section>
+
+				</div>
+				<div id="latest">
+					<h2>LATEST</h2>
+					<section class="news">
+						<div class="news-container">
+							<img src="https://images.indianexpress.com/2021/11/IND-NZ-6.jpg">
+							<p class="carousel-text"><a style="color:white;" href="https://www.bhaskar.com/sports/cricket/news/india-vs-new-zealand-5th-day-live-no-foreign-team-chased-the-target-of-284-run-in-india-129163777.html">52 गेंदों में न्यूजीलैंड का आखिरी विकेट नहीं ले सके भारतीय गेंदबाज, रचिन और पटेल ने मैच ड्रॉ कराया</a></p>
+						</div>
+					</section>
+					<section class="news">
+						<div class="news-container">
+							<img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/14FEB/production/_121859958_c3eaad5a-261f-4c03-9996-12cb9b7e831e.jpg">
+							<p class="carousel-text"><a style="color:white;" href="https://www.bbc.com/hindi/international-59461602">मोदी सरकार के इस समर्थन पर चीनी अख़बार हुआ फिदा</a></p>
+						</div>
+					</section>
+				</div>
+				<div id="our-picks">
+					<h2>OUR PICKS</h2>
+					<section class="news">
+						<div class="news-container">
+							<img style="height:172px;" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/EF00/production/_121848116_fc8041d9-fbe0-41ce-84d2-1c9f46172761.jpg">
+							<p class="carousel-text"><a style="color:white;" href="https://www.bbc.com/hindi/social-59444802">बीजेपी के मंत्रियों, नेताओं ने ये तस्वीर पोस्ट की और मच गया सोशल मीडिया पर हंगामा?</a> </p>
+						</div>
+					</section>
+					<section class="news">
+						<div class="news-container">
+							<img style="height:172px;" src="https://i0.wp.com/www.chardhamtour.in/wp-content/uploads/2019/09/Auli-Winter-Carnival.jpg">
+							<p class="carousel-text"><a style="color:white;" href="https://www.abplive.com/videos/states/preparations-intensified-for-organizing-the-games-in-auli-hindi-news-2007038">Uttarakhand : औली में खेलो के आयोजन की तैयारियां तेज</a> </p>
+						</div>
+					</section>
+				</div>
+			</article>
+			<section class="more-news">
+				<div class="news-section">
+					<article class="world">
+						<h2>WORLD</h2>
+						<img  style="height:172px;"src="https://static.india.com/wp-content/uploads/2021/11/Covid-19-omicron.jpg">
+						<h3><a style="color:white" href="https://www.india.com/hindi-news/india-hindi/omicron-virus-update-world-health-organisation-warns-risk-related-to-covid-variant-omicron-very-high-what-is-omicron-virus-5115787/">ओमीक्रोन वेरिएंट</a></h3>
+						<p>कोरोना की दूसरी लहर के कहर से राहत मिलने के बाद पूरी दुनिया पर कोरोना ने नए Omicron Variant का खतरा मंडरा रहा है. Omicron को लेकर लगभग सभी देश अलर्ट पर हैं. दुनिया के कई देशों में कोरोना के इस खतरनाक वेरिएंट के पाये जाने के बाद एक बार फिर दहशत का माहौल है. इन सबके बीच विश्व स्वास्थ्य संगठन के बयान ने और चिंता बढ़ा दी है. WHO ने कोविड के इस नए वेरिएंट Omicron (ओमिक्रॉन ) को लेकर चेतावनी जारी की है. WHO ने Omicron को ‘बहुत जोखिम वाला’ (Very High) बताया है. WHO की तरफ से कहा गया है कि ओमिक्रॉन वेरिएंट के दुनियाभर में फैलने की आशंका है[…]</p>
+					</article>
+					<article class="sport">
+						<h2>SPORT</h2>
+						<img src="https://www.firstpost.com/wp-content/uploads/2021/11/Rachin643.jpg">
+						<h3><a style="color:white;" href="https://www.bhaskar.com/sports/cricket/news/india-vs-new-zealand-5th-day-live-no-foreign-team-chased-the-target-of-284-run-in-india-129163777.html">भारत बनाम न्यूजीलैंड</a></h3>
+						<p> कानपुर में खेला गया पहला टेस्ट मैच बड़े ही रोमांचक अंदाज में बिना किसी नतीजे के समाप्त हो गया। मैच में कीवी टीम के सामने 284 रनों का टारगेट था, लेकिन उसने अंतिम दिन डटकर बैटिंग करते हुए मुकाबले को ड्रॉ करा लिया। मैच को ड्रॉ कराने में डेब्यू कर रहे रचिन रवींद्र और एजाज पटेल ने बड़ी भूमिका निभाई। रचिन ने 91 गेंदें खेली, जबकि एजाज ने भी विकेट बचाते हुए 23 गेंदों का सामना किया। आखिरी विकेट के लिए इस जोड़ी ने कुल 52 गेंदों का सामना किया […]</p>
+					</article>
+				</div>
+
+				<aside>
+					<h4>RECENT</h4>
+					<div class="recent-news">
+						<img src="https://hindi.cdn.zeenews.com/hindi/sites/default/files/2021/11/29/979181-covid-test-1.jpg">
+						<p><a style="color:white" href="https://zeenews.india.com/hindi/india/foreigners-found-positive-in-mathura-amidst-panic-of-new-coronavirus-variant/1037467">कोरोना: मथुरा में 4 विदेशी मिले पॉजिटिव, नए वैरिएंट की दहशत के बीच बढ़ी टेंशन</a></p>
+					</div>
+					<div class="recent-news">
+						<img src="https://spiderimg.amarujala.com/assets/images/2021/11/29/750x506/rakesh-tikait_1638187609.jpeg">
+						<p><a style="color:white;" href="https://www.amarujala.com/delhi/bharatiya-kisan-union-bku-leader-rakesh-tikait-says-farm-laws-have-been-a-disease-and-it-s-good-that-they-are-revoked?src=top-lead-home-1">आगे की रणनीति पर एसकेएम की बैठक एक दिसंबर को, टिकैत बोले- अब अन्य मुद्दों पर भी बात करे सरकार</a></p>
+					</div>
+					<div class="recent-news">
+						<img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202111/navjot_singh_sidhu_1_1-sixteen_nine-sixteen_nine.jpg?size=948:533">
+						<p><a style="color:white;" href="https://www.aajtak.in/elections/punjab-assembly-elections/story/navjot-singh-sidhu-arvind-kejriwal-tweet-comment-living-glass-houses-not-throw-stones-others-ntc-1364907-2021-11-29">पंजाब की लड़ाई में शायर हुए सिद्धू, केजरीवाल को कहा- शीशे के घरों में रहने वालों को.</a></p>
+					</div>
+					<div class="recent-news">
+						<img src="https://spiderimg.amarujala.com/assets/images/2021/11/29/750x506/yogi-bulldozer_1638188662.jpeg">
+						<p><a style="color:white;" href="https://www.amarujala.com/india-news/political-gossip-bjp-leaders-taunted-on-yogi-adityanath-he-always-order-to-run-bulldozer-over-accused-houses?src=top-lead-home-4">भाजपा नेताओं का तंज, योगी जी भी गजब हैं, सीधे बुलडोजर चलवा देते हैं!</a></p>
+					</div>
+					<div class="recent-news">
+						<img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202111/2_1200_0-sixteen_nine.jpg?size=948:533">
+						<p><a style="color:white;" href="https://www.aajtak.in/world/story/pakistan-minister-fawad-chaudhary-says-that-the-lahore-woman-should-apologise-to-sikh-community-for-hurting-sentiments-tlifw-1364962-2021-11-29">करतारपुर में लाहौर की महिला ने की मॉडलिंग, PAK मंत्री हुए खफा</a></p>
+					</div>
+				</aside>
+			</section>
+		</main>
+		<footer>
+			<div class="social-links">
+				<section class="about">
+					<h2>About</h2>
+					<p>
+विश्व समाचार का संग्रह बिंदु। वन स्टॉप प्लेटफॉर्म। हम आपके लिए सम्मानित लेखकों से दुनिया भर की वर्तमान घटनाओं को लेकर आए हैं। इस मंच के माध्यम से पढ़ना सुनिश्चित करें और जो हम आपके लिए लाए हैं उसके लिए बने रहें। इंटरसेसरन्यूज द्वारा||इंटरसेसरटीम।	<div class="social-icons-footer">
+						<i class="fab fa-facebook"></i>
+						<i class="fab fa-twitter-square"></i>
+						<i class="fab fa-google-plus-square"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-youtube-square"></i>
+						<i class="fab fa-linkedin"></i>
+					</div>
+				</section>
+				<section class="Instagram">
+					<h2>Instagram</h2>
+					<img src="images/aside2.jpg">
+					<img src="images/aside3.jpg">
+					<img src="images/aside4.jpg">
+					<img src="images/aside5.jpg">
+					<img src="images/aside2.jpg">
+					<img src="images/aside3.jpg">
+					<img src="images/aside4.jpg">
+					<img src="images/aside5.jpg">
+					<img src="images/aside2.jpg">
+					<button type="button" class="footer-buttons">View on Instagram</button>
+				</section>
+				<section class="Subscribe">
+
+<label><b><h2>Subscribe to IntercessorNews Today</h2>
+</b>
+</label>
+<input type="email" name="Uname" id="Uname" placeholder="Email Address">
+<input type="button" name="log" id="log" class="footer-buttons" value="Subscribe" onclick="myFunction()">
+
+
+
+</section>
+<script>
+function myFunction() {
+var str = document.getElementById("Uname").value;
+alert("Subscribed By "+str);
+}
+</script>
+			</div>
+
+			<div class="copyright">Copyright © 2021 News Today. Designed by IntercessorTeam</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>

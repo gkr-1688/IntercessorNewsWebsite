@@ -1,0 +1,378 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>IntercessorNews</title>
+			          <link rel="icon" href="logo.png" type="image/x-icon" />
+	</head>
+	<body>
+
+				<style>
+.dropbtn {
+background-color: black;
+color: white;
+padding: 6px;
+font-size: 14px;
+border: none;
+cursor: pointer;
+width: 60px;
+line-height: 5px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+background-color: black;
+}
+.dropbtn2 {
+background-color:white ;
+color: black;
+padding: 6px;
+font-size: 14px;
+border: none;
+cursor: pointer;
+width: 150px;
+line-height: 5px;
+}
+
+.dropbtn2:hover, .dropbtn2:focus {
+background-color: black;
+color: white;
+}
+#myInput {
+box-sizing: border-box;
+background-image: url('searchicon.png');
+background-position: 14px 12px;
+background-repeat: no-repeat;
+font-size: 16px;
+padding: 14px 20px 12px 45px;
+border: none;
+border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: black;
+min-width: 230px;
+overflow: auto;
+border: 1px solid #ddd;
+z-index: 1;
+}
+
+.dropdown-content a {
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {background-color: brown;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.show {display: block;}
+</style>
+
+</head>
+<body>
+<header>
+<div class="website-header">
+<img src="logo.png">
+<h1>IntercessorNews</h1>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+var input, filter, ul, li, a, i;
+input = document.getElementById("myInput");
+filter = input.value.toUpperCase();
+div = document.getElementById("myDropdown");
+a = div.getElementsByTagName("a");
+for (i = 0; i < a.length; i++) {
+txtValue = a[i].textContent || a[i].innerText;
+if (txtValue.toUpperCase().indexOf(filter) > -1) {
+a[i].style.display = "";
+} else {
+a[i].style.display = "none";
+}
+}
+}
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+<div class="social-icons">
+<i> <div class="dropdown">
+							<div id="google_translate_element"></div>
+<div>
+</div>
+</div>
+<i> <div class="dropdown">
+<button class="dropbtn" ><i class="fa fa-search"></i></button>
+<div id="myDropdown" class="dropdown-content">
+<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"></i>
+<a href="Aboutus.html">About</a>
+<a href="contactUs.html">Contact</a>
+<a href="types/sources.html">Sources</a>
+<a href="pay.html">Support Us</a>
+</div>
+</div>
+<a href="https://www.facebook.com/Intercessor-news-105262998664435"><i class="fab fa-facebook"></i></a>
+<a href="https://twitter.com/NewsIntercesso?t=n7U5mkKCjTd1-Nab3ljB0w&s=09"><i class="fab fa-twitter-square"></i></a>
+<i class="fab fa-google-plus-g"></i>
+<a href="https://www.instagram.com/intercessor_news/"><i class="fab fa-instagram"></i></a>
+<i class="fas fa-rss"></i><button>
+<a href="signup.php">Logout</a></button>
+</div>
+
+</div>
+			<nav class="navbar navbar-expand-md ">
+  <!-- Brand -->
+
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="types/Politics.html">POLITICS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="types/World.html">WORLD</a>
+      </li>
+		<li class="nav-item">
+        <a class="nav-link" href="types/Business.html">BUSINESS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="types/Travel.html">Travel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="types/Technology.html">TECHNOLOGY</a>
+      </li>
+		<li class="nav-item">
+        <a class="nav-link" href="types/Sports.html">SPORT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="types/articles.html">Articles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="types/Livenews.html">Live News Channel</a>
+      </li>
+    </ul>
+  </div>
+			</nav>
+			<div class="breaking-news-section">
+				<span id="btext">Breaking News</span>
+				<marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+					<a href="https://timesofindia.indiatimes.com/world/rest-of-world/new-covid-variant-shuts-borders-across-globe/articleshow/87971891.cms" class="breaking-news">
+						<p class="bntime">29 Nov 2021</p>
+						New Covid variant shuts borders across globe</a>
+					<a href="https://www.ndtv.com/india-news/live-updates-parliament-winter-session-begins-eyes-on-farm-laws-repeal-2628653" class="breaking-news"><p class="bntime">29 Nov 2021</p>Government Wants To Push Through Bill Without Debate, Says Congress</a>
+					<a href="https://www.india.com/maharashtra/maharashtra-lockdown-latest-news-covid-update-coronavirus-omicron-variant-delta-uddhav-thackeray-rajesh-tope-bmc-cm-urges-people-to-follow-guidelines-5114800/" class="breaking-news"><p class="bntime">29 Nov 2021</p>Is Maharashtra Heading Towards Another Covid Lockdown?</a>
+				</marquee>
+			</div>
+		</header>
+		<main>
+			<article id="popular-news">
+				<div id="featured">
+					<h2>FEATURED</h2>
+					<section class="popular-news-carousel">
+						<div id="carousel" class="carousel slide" data-ride="carousel">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img style="height:340" class="d-block w-100" src="https://static.toiimg.com/thumb/msid-87967490,imgsize-37084,width-400,resizemode-4/87967490.jpg" alt="First slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h5><a style="color:white" href="https://timesofindia.indiatimes.com/india/deadly-cocktail-of-sp-bsp-cong-wants-to-stop-welfare-work-of-pm-modi-cm-yogi-bjp/articleshow/87967238.cms">Deadly cocktail' of SP, BSP, Cong wants to stop welfare work of P.M Modi,C.M Yogi</a></h5>
+									<p>29th Nov 2021</p>
+								 </div>
+							</div>
+							<div class="carousel-item">
+							  <img style="height:340" class="d-block w-100" src="https://th.thgim.com/news/cities/chennai/v2clam/article37741137.ece/ALTERNATES/FREE_660/cityrain" alt="Second slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h5><a style="color:white" href="https://www.thehindu.com/news/national/tamil-nadu/heavy-rain-may-shift-to-southern-tamil-nadu-on-november-29/article37740465.ece">Heavy rain may shift to southern Tamil Nadu on November 29</a></h5>
+									<p>29th Nov 2021</p>
+								 </div>
+							</div>
+							<div class="carousel-item">
+							  <img style="height:340" class="d-block w-100" src="https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/College_students_exam_rep_PTI_29012021_1200-compressed.jpg?itok=cxQc-LHq" alt="Third slide">
+								<div class="carousel-caption d-none d-md-block">
+
+									<h5><a style="color:white" href="https://www.thenewsminute.com/article/karnataka-covid-clusters-govt-advises-colleges-postpone-cultural-activities-158129">Karnataka COVID clusters: Govt advises colleges to postpone cultural activities</a></h5>
+									<p>29th Nov 2021</p>
+								 </div>
+							</div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</section>
+
+				</div>
+				<div id="latest">
+					<h2>LATEST</h2>
+					<section class="news">
+						<div class="news-container">
+							<img style="height=40px;" src="https://images.news18.com/ibnlive/uploads/2021/11/ravichandran-latham-bcci-1600-16381635883x2.jpg?impolicy=website&width=210&height=140">
+							<p class="carousel-text"><a style="color:white;" href="https://www.news18.com/cricketnext/news/india-vs-new-zealand-live-cricket-score-updates-ind-vs-nz-2021-live-1st-test-match-day-5-kanpur-livenews-4497482.html">IND vs NZ 2021, 1st Test</a></p>
+						</div>
+					</section>
+					<section class="news">
+						<div class="news-container">
+							<img src="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production+Library/08-04-2020_WHO_Rep-of-Congo.jpg/image1170x530cropped.jpg">
+							<p class="carousel-text"><a style="color:white;" href="https://news.un.org/en/story/2021/11/1106672">Still ‘not clear’ whether Omicron COVID variant is more transmissible or more severe than Delta: WHO</a></p>
+						</div>
+					</section>
+				</div>
+				<div id="our-picks">
+					<h2>OUR PICKS</h2>
+					<section class="news">
+						<div class="news-container">
+							<img style="height:172px;" src="https://www.aljazeera.com/wp-content/uploads/2021/11/h_57280247.jpg?resize=770%2C513">
+							<p class="carousel-text"><a style="color:white;" href="https://www.aljazeera.com/news/2021/11/23/ethiopias-abiy-vows-to-lead-army-from-the-battlefront">Ethiopia’s PM Abiy Ahmed vows to lead army ‘from the battlefront’</a> </p>
+						</div>
+					</section>
+					<section class="news">
+						<div class="news-container">
+							<img style="height:172px;" src="https://foreignpolicy.com/wp-content/uploads/2021/11/GettyImages-1235938730.jpg?resize=1000,667&quality=90">
+							<p class="carousel-text"><a style="color:white;" href="https://cdn.jagonews24.com/media/imgAllNew/BG/2019November/ukrainepmb-20211127102943.jpg">Zelensky alleges coup plan involving Russians</a> </p>
+						</div>
+					</section>
+				</div>
+			</article>
+			<section class="more-news">
+				<div class="news-section">
+					<article class="world">
+						<h2>WORLD</h2>
+						<img  style="height:172px;"src="https://i.guim.co.uk/img/media/67d48675801b1a83db31eb6ea39cbb48980ea1ff/0_129_3872_2323/master/3872.jpg?width=620&quality=85&auto=format&fit=max&s=04d0e19bdda49fe31a64b47172f4081d">
+						<h3><a style="color:white" href="https://www.theguardian.com/world/2021/nov/29/omicron-covid-variant-poses-very-high-global-risk-says-who">Omicron Covid variant poses very high global risk, says WHO</a></h3>
+						<p>The Omicron coronavirus variant is likely to spread internationally, posing a very high global risk of infection surges that could have severe consequences some areas, the World Health Organization (WHO) said on Monday.
+							The UN agency urged its 194 member states to accelerate vaccination of high-priority groups and, in anticipation of increased case numbers, to “ensure mitigation plans are in place” to maintain essential health services[…]</p>
+					</article>
+					<article class="sport">
+						<h2>SPORT</h2>
+						<img src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2021/11/ap21333164637463-1-1638164578.jpg">
+						<h3><a style="color:white;" href="https://www.indiatvnews.com/sports/cricket/india-vs-new-zealand-live-score-ind-vs-nz-1st-test-day-5-live-cricket-score-latest-updates-kanpur-test-match-latest-scorecard-747204">India vs New Zealand 1st Test Day 5</a></h3>
+						<p> India vs New Zealand 1st Test Day 5, 1st session: New Zealand clearly dominated the opening session of the final day in Kanpur. Somerville and Latham walked the pitch on their overnight score of 4/1 and stood rock-solid on the pitch. The Indian bowlers were badly searching for wickets as the duo knit a 76-run stand between them.[…]</p>
+					</article>
+				</div>
+
+				<aside>
+					<h4>RECENT</h4>
+					<div class="recent-news">
+						<img src="https://images.hindustantimes.com/img/2021/11/29/550x309/Parliament_building_1638171986242_1638171986388.jpg">
+						<p><a style="color:white" href="https://www.hindustantimes.com/india-news/bill-to-repeal-farm-laws-passed-in-parliament-101638170546104.html">Bill to repeal farm laws passed in Lok Sabha</a></p>
+					</div>
+					<div class="recent-news">
+						<img src="https://th.thgim.com/business/markets/gi14hy/article37733794.ece/ALTERNATES/FREE_660/Customers-fill-petrol">
+						<p><a style="color:white;" href="https://www.thehindu.com/business/markets/petrol-diesel-prices-to-fall-only-on-sustained-drop-in-international-oil-prices/article37733795.ece">Petrol, diesel prices to fall only on sustained drop in international oil prices</a></p>
+					</div>
+					<div class="recent-news">
+						<img src="https://static.toiimg.com/thumb/msid-87974743,imgsize-37160,width-400,resizemode-4/87974743.jpg">
+						<p><a style="color:white;" href="https://timesofindia.indiatimes.com/city/delhi/delhi-pollution-sc-raises-concern-asks-govt-to-frame-plan-for-planting-trees-in-city/articleshow/87974773.cms">SC raises concern, asks govt to frame plan for planting tree.</a></p>
+					</div>
+					<div class="recent-news">
+						<img src="https://c.ndtvimg.com/2021-10/8fd22ra8_nirmala-sitharaman-pti-photo_625x300_16_October_21.jpg">
+						<p><a style="color:white;" href="https://www.ndtv.com/business/no-proposal-to-recognise-bitcoin-as-a-currency-says-finance-minister-nirmala-sitharaman-2628979">No Proposal To Recognise Bitcoin As A Currency, Says Finance Minister</a></p>
+					</div>
+					<div class="recent-news">
+						<img src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2021/11/29/bng09-esi-hospital-021-1055645-1638181542.jpg?itok=lY7eljwW">
+						<p><a style="color:white;" href="https://www.deccanherald.com/city/top-bengaluru-stories/bodies-of-two-covid-19-victims-uncovered-during-mortuary-cleanup-in-bengaluru-1055645.html">Bodies of two Covid-19 victims uncovered during mortuary cleanup in Bengaluru</a></p>
+					</div>
+				</aside>
+			</section>
+		</main>
+		<footer>
+			<div class="social-links">
+				<section class="about">
+					<h2>About</h2>
+					<p>
+The collection point of world news. one stop platform. We bring you current events from around the world from respected authors. Be sure to read through this forum and stay tuned for what we have brought to you. By IntercessorNews||IntercessorTeam.</p>
+					<div class="social-icons-footer">
+						<a href="https://www.facebook.com/Intercessor-news-105262998664435"><i class="fab fa-facebook"></i></a>
+						<a href="https://twitter.com/NewsIntercesso?t=n7U5mkKCjTd1-Nab3ljB0w&s=09"><i class="fab fa-twitter-square"></i></a>
+						<i class="fab fa-google-plus-square"></i>
+						<a href="https://www.instagram.com/intercessor_news/"><i class="fab fa-instagram"></i></a>
+						<i class="fab fa-youtube-square"></i>
+						<i class="fab fa-linkedin"></i>
+					</div>
+				</section>
+				<section class="Instagram">
+					<h2>Instagram</h2>
+					<img src="images/aside2.jpg">
+					<img src="images/aside3.jpg">
+					<img src="images/aside4.jpg">
+					<img src="images/aside5.jpg">
+					<img src="images/aside2.jpg">
+					<img src="images/aside3.jpg">
+					<img src="images/aside4.jpg">
+					<img src="images/aside5.jpg">
+					<img src="images/aside2.jpg">
+					<button type="button" class="footer-buttons">View on Instagram</button>
+				</section>
+				<section class="Subscribe">
+
+<label><b><h2>Subscribe to IntercessorNews Today</h2>
+</b>
+</label>
+<input type="email" name="Uname" id="Uname" placeholder="Email Address">
+<input type="button" name="log" id="log" class="footer-buttons" value="Subscribe" onclick="myFunction()">
+<p><strong>User can comment here about Website</strong></p>
+<br>
+<p>Click here</p>
+<button>		<a href="commenting intercessor news/index.php">Comment</a></button>
+
+
+</section>
+<script>
+function myFunction() {
+var str = document.getElementById("Uname").value;
+alert("Subscribed By "+str);
+}
+</script>
+			</div>
+
+			<div class="copyright">Copyright © 2021 News Today. Designed by IntercessorTeam</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>

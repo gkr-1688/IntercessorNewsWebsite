@@ -1,0 +1,44 @@
+comedy
+	-masti nahi sasti
+	-fukre
+	-hera pheri
+	-bhagam bhag
+	-Golmaal fun unlmited
+	-emtertainment
+drama
+	-jolly LLB
+	-hulchul
+	-Firangi
+	-Fraud Saiyaan
+action
+	-Attack
+	-Journey Bombay To Goa
+	-Kick
+	-Gangs of Wasseypur
+	-KGF
+	-singh is bling
+	-Paan Singh Tomar
+	-Heropanti
+crime
+	-raja natwarlal
+	-haseena
+sci fi
+	-krrish
+	-bahubali
+animation
+	-raya and the last dragon
+	-zootopia
+	-despicable me
+	-tangled
+	-Ratatouille
+	-Animation Life
+	-Boss Baby
+	-Incredibles
+	-Moana
+romance
+	-ramiya vasaviya
+	-aashiqui
+	-Aashiq Banaya Aapne
+	-Wake up sid
+	-Luka Chuppi
+	-Fitoor
